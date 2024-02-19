@@ -1,75 +1,334 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="style.css">
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
 </head>
+
 <body>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
+    <!-- header section start here  -->
+    <header class="header">
+        <div class="logoContent">
+            <a href="#home" class="logo"><img src="images/logo.png" alt=""></a>
+            <h1 class="logoName">Legacy </h1>
+        </div>
 
-<h2>Animated Sidenav Example</h2>
-<p>Click on the element below to open the side navigation menu.</p>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#product">product</a>
+            <a href="#blogs">blogs</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
 
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-   
+        <div class="search">
+            <input type="search" placeholder="search...">
+        </div>
+    </header>
+    <!-- header section end here  -->
+
+    <!-- home section start here  -->
+    <section class="home" id="home">
+        <div class="homeContent">
+            <h2>Delicious Cake for Everyone<br>By Legacy </h2>
+            <p></p>
+            <div class="home-btn">
+                <a href="#product"><button>see more</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- home section end here  -->
+
+    <!-- product section start here  -->
+    <section class="product" id="product">
+        <div class="heading">
+            <h2>Our Exclusive Products</h2>
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/C1.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p></p>
+                        <div class="orderNow">
+                            <a href="http://wa.me/+918583065344?text=I%20am%20interested%20in%20your%20cakes.">
+                            <button>Order Now </button>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p></p>
+                        <div class="orderNow">
+                            <a href="http://wa.me/+918583065344?text=I%20am%20interested%20in%20your%20cakes."></a>
+                            <button>Order Now </button>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/white.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p></p>
+                        <div class="orderNow">
+                            <a href="http://wa.me/+918583065344?text=I%20am%20interested%20in%20your%20cakes."></a>
+                            <button>Order Now </button>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/m.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p></p>
+                        <div class="orderNow">
+                            <a href="http://wa.me/+918583065344?text=I%20am%20interested%20in%20your%20cakes."></a>
+                            <button>Order Now </button>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/v.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p></p>
+                        <div class="orderNow">
+                        <a href="http://wa.me/+918583065344?text=I%20am%20interested%20in%20your%20cakes.">
+                            <button>Order Now </button>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/v2.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p></p>
+                        <div class="orderNow">
+                            <a href="http://wa.me/+918583065344?text=I%20am%20interested%20in%20your%20cakes."></a>
+                            <button>Order Now </button>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/v3.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p></p>
+                        <div class="orderNow">
+                            <a href="http://wa.me/+918583065344?text=I%20am%20interested%20in%20your%20cakes."></a>
+                            <button>Order Now </button>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/v4.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p></p>
+                        <div class="orderNow">
+                            <a href="http://wa.me/+918583065344?text=I%20am%20interested%20in%20your%20cakes."></a>
+                            <button>Order Now </button>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- product section end here  -->
+
+    <!-- blogs section start here  -->
+    
+
+    <section class="newsletter">
+        <form action="">
+            <h3>Contact us through Whatsapp or Call</h3>
+            <a href="http://wa.me/+918583065344?text=I%20am%20interested%20in%20your%20cakes."></a>
+            <input type="button" value="Contact Us" class="box2">
+        </a>
+        </form>
+    </section>
+    <!-- newsletter section ends here  -->
+
+    <!-- review section start here  -->
+    <section class="review" id="review">
+        <div class="heading">
+            <h2>client review</h2>
+        </div>
+
+
+        <div class=" swiper review-row">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>I have tried their "chocochip special " it is really amazing....for me more fascinating thing is that they made wheat cakes too ...as i have asked for it, they get me it is super tasty and healthy...you must try </p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/r1.png" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Krrish Shaw</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Add More Review</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/ru.png" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>user</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Food: 5
+                            Service: 5
+                            Atmosphere: 5
+                            Vegetarian offerings
+                            Menu is all vegetarian
+                            </p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/r2.png" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Anita's Trendd</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+    </section>
+    <!-- review section ends here  -->
+
+    <!-- footer section start here  -->
+
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="mainBox">
+                <div class="content">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                    <h1 class="logoName"> Sweet Cake </h1>
+                </div>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta accusamus maxime quod.</p>
+
+            </div>
+            <div class="box">
+                <h3>Quick link</h3>
+                <a href="#home"> <i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#product"> <i class="fas fa-arrow-right"></i>product</a>
+                <a href="#blogs"> <i class="fas fa-arrow-right"></i>blogs</a>
+                <a href="#review"> <i class="fas fa-arrow-right"></i>review</a>
+                <a href="#contact"> <i class="fas fa-arrow-right"></i>contact</a>
+
+            </div>
+            <div class="box">
+                <h3>Locate Us</h3>
+                <a href="https://maps.app.goo.gl/PLvRu2bUdoqseQV97"> <i class="fas fa-arrow-right"></i>Google Maps</a>
+                <a href="https://wa.me/+918583065344?text=I%20was%20interested%20about%20your%20Catalogue."> <i class="fas fa-arrow-right"></i>Catalogue</a>
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="http://wa.me/+918583065344?text=I%20am%20interested%20in%20your%20cakes."> <i class="fas fa-phone"></i>+91 8583065344</a>
+                <a href=""> <i class="fas fa-envelope"></i>kanchanshaw459@gmail.com</a>
+                <a href="https://www.instagram.com/legacy_confectionary/"><i class="fab fa-instagram"></i>Instagram</a>
+            </div>
+
+        </div>
+        <div class="share">
+            
+            <a href="http://wa.me/+918583065344?text=I%20am%20interested%20in%20your%20cakes." class="fab fa-instagram"></a>
+            
+        </div>
+        
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file  -->
+    <script src="index.js"></script>
+
+
 </body>
-</html> 
+
+</html>
